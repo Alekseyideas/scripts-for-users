@@ -1,0 +1,46 @@
+header.header.header--1 
+  .container-fluid 
+    .row.main-selects 
+      .col 
+        .d-flex
+          select.form-select(aria-label='Тип скрипта')#srcType
+            option(selected='' value="" disabled) Тип скрипта
+          select.ms-4.form-select(aria-label='Тип продукта')#productType
+            option(selected='' value="" disabled) Тип продукта
+      .col
+        div.d-flex.justify-content-end
+          include ./id2
+.header.header--2
+  .container-fluid 
+    .d-flex 
+      ul.navbar-nav#navMenu 
+        //- li(class="nav-item")
+        //-   span(class="nav-link active") Кадры
+        //-   .list-group
+        //-     span.list-group-item.list-group-item-action(href='#' aria-current='true')
+        //-       | The current link item
+        //-     span.list-group-item.list-group-item-action A second link item
+        //-     span.list-group-item.list-group-item-action A third link item
+        //-     span.list-group-item.list-group-item-action A fourth link item
+        //- li(class="nav-item")
+        //-   span(class="nav-link active") Кадры
+        //-   .list-group
+        //-     span.list-group-item.list-group-item-action(href='#' aria-current='true')
+        //-       | The current link item
+        //-     span.list-group-item.list-group-item-action A second link item
+        //-     span.list-group-item.list-group-item-action A third link item
+        //-     span.list-group-item.list-group-item-action A fourth link item
+
+      //- select.form-select(aria-label='Кадры')#kd
+      //-   option(selected='') Кадры
+      //- select.form-select(aria-label='Головбух')#gb
+      //-   option(selected='') Головбух
+      //- select.form-select(aria-label='Охрана труда')#ot
+      //-   option(selected='') Охрана труда
+      //- select.form-select(aria-label='Госзакупки')#gz
+      //-   option(selected='') Госзакупки
+      //- select.form-select(aria-label='Госзакупки')#med
+      //-   option(selected='') Медицина
+      //- select.form-select(aria-label='Госзакупки')#obr
+      //-   option(selected='') Образование
+  

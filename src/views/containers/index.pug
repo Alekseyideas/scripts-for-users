@@ -1,0 +1,43 @@
+extends ../layouts/base
+block content
+  main
+    section.mt-2.sec-name.py-3
+      .container-fluid#scriptNameDate
+
+
+    section.py-3.section-body
+      .container-fluid 
+        .row 
+          .col-9
+            #content.p-4
+          .col-3
+            .d-flex.justify-content-end
+              aside.aside#aside
+                ul 
+
+
+
+        
+  //- script.
+  //-   document.addEventListener('DOMContentLoaded', domLoaded);
+
+  //-   async function domLoaded() {
+  //-     // const data = await getJson('./test.json');
+
+
+  //-     const data = await getJson();
+  //-     console.log(data);
+  //-   }
+
+
+  //-     async function getJson(uri) {
+  //-       console.log(111);
+  //-       let data = null;
+  //-       try {
+  //-         // data = await fetch(uri);
+  //-         return null;
+  //-       } catch (error) {
+  //-         console.log(error, 'error');
+  //-         return null;
+  //-       }
+  //-     };

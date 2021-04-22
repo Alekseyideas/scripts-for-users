@@ -1,0 +1,195 @@
+{
+  "productsType": [
+    {
+      "id": 20,
+      "name": "Онлайн школа"
+    },
+    {
+      "id": 21,
+      "name": "Онлайн школа 2"
+    }
+  ],
+  "scriptType": [
+    {
+      "id": 111,
+      "name": "Скрипт 1"
+    },
+    {
+      "id": 112,
+      "name": "Скрипт 2"
+    },
+    {
+      "id": 113,
+      "name": "Скрипт 3"
+    }
+  ],
+
+  "category": [
+    {
+      "id": 1,
+      "name": "Кадры"
+    },
+    {
+      "id": 2,
+      "name": "Головбух"
+    },
+    {
+      "id": 3,
+      "name": "Охрана труда"
+    },
+    {
+      "id": 4,
+      "name": "Госзакупки"
+    },
+    {
+      "id": 5,
+      "name": "Медицина"
+    },
+    {
+      "id": 6,
+      "name": "Образование"
+    }
+  ],
+  "items": [
+    {
+      "id": 30,
+      "name": "Переподписка Головбух",
+      "categoryId": 2,
+      "productTypeId": 20,
+      "scriptTypeId": 111
+    },
+    {
+      "id": 301,
+      "name": "Переподписка Головбух 2",
+      "categoryId": 2,
+      "productTypeId": 20,
+      "scriptTypeId": 111
+    },
+    {
+      "id": 302,
+      "name": "Переподписка Головбух 3",
+      "categoryId": 2,
+      "productTypeId": 20,
+      "scriptTypeId": 111
+    },
+    {
+      "id": 31,
+      "name": "Переподписка Головбух 112",
+      "categoryId": 2,
+      "productTypeId": 20,
+      "scriptTypeId": 112
+    },
+    {
+      "id": 32,
+      "name": "Переподписка Головбух 112",
+      "categoryId": 2,
+      "productTypeId": 21,
+      "scriptTypeId": 113
+    },
+    {
+      "id": 30,
+      "name": "Переподписка Охрана рус",
+      "categoryId": 3,
+      "productTypeId": 21,
+      "scriptTypeId": 111
+    },
+    {
+      "id": 31,
+      "name": "Переподписка Охрана 112",
+      "categoryId": 3,
+      "productTypeId": 20,
+      "scriptTypeId": 112
+    },
+    {
+      "id": 32,
+      "name": "Переподписка Охрана 112",
+      "categoryId": 3,
+      "productTypeId": 21,
+      "scriptTypeId": 113
+    },
+    {
+      "id": 30,
+      "name": "Переподписка Госзакупки",
+      "categoryId": 4,
+      "productTypeId": 20,
+      "scriptTypeId": 111
+    },
+    {
+      "id": 31,
+      "name": "Переподписка Госзакупки 112",
+      "categoryId": 4,
+      "productTypeId": 20,
+      "scriptTypeId": 112
+    },
+    {
+      "id": 32,
+      "name": "Переподписка Госзакупки 112",
+      "categoryId": 4,
+      "productTypeId": 20,
+      "scriptTypeId": 113
+    },
+    {
+      "id": 30,
+      "name": "Переподписка Медицина",
+      "categoryId": 5,
+      "productTypeId": 20,
+      "scriptTypeId": 111
+    },
+    {
+      "id": 31,
+      "name": "Переподписка Медицина 112",
+      "categoryId": 5,
+      "productTypeId": 20,
+      "scriptTypeId": 112
+    },
+    {
+      "id": 32,
+      "name": "Переподписка Медицина 112",
+      "categoryId": 5,
+      "productTypeId": 21,
+      "scriptTypeId": 113
+    },
+    {
+      "id": 30,
+      "name": "Переподписка Образование",
+      "categoryId": 6,
+      "productTypeId": 20,
+      "scriptTypeId": 111
+    },
+    {
+      "id": 31,
+      "name": "Переподписка Образование 112",
+      "categoryId": 6,
+      "productTypeId": 20,
+      "scriptTypeId": 112
+    },
+    {
+      "id": 32,
+      "name": "Переподписка Образование 112",
+      "categoryId": 6,
+      "productTypeId": 21,
+      "scriptTypeId": 113
+    },
+    {
+      "id": 30,
+      "name": "Переподписка рус",
+      "categoryId": 1,
+      "productTypeId": 20,
+      "scriptTypeId": 111
+    },
+    {
+      "id": 31,
+      "name": "Переподписка рус 112",
+      "categoryId": 1,
+      "productTypeId": 20,
+      "scriptTypeId": 112
+    },
+    {
+      "id": 32,
+      "name": "Переподписка рус 112",
+      "categoryId": 1,
+      "productTypeId": 21,
+      "scriptTypeId": 113
+    }
+  ]
+}

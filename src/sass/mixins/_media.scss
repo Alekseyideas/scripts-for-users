@@ -1,0 +1,23 @@
+@mixin minXl() {
+	@media screen and (min-width: 1200px) {
+		@content
+	}
+}
+
+@mixin minLg() {
+	@media screen and (min-width: 992px) {
+		@content
+	}
+}
+
+@mixin minMd() {
+	@media screen and (min-width: 768px) {
+		@content
+	}
+}
+
+@mixin minSm() {
+	@media screen and (min-width: 576px) {
+		@content
+	}
+}

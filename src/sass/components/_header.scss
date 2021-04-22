@@ -1,0 +1,60 @@
+.header {
+  .main-selects {
+    .form-select {
+      max-width: 200px;
+    }
+  }
+
+  &--1 {
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(196, 196, 196);
+  }
+
+  &--2 {
+    padding: 20px 0;
+    .form-select {
+      width: initial;
+      margin-right: 20px;
+    }
+    background: white;
+  }
+
+  .navbar-nav {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    & > * {
+      margin-right: 40px;
+    }
+
+    .list-group {
+      position: absolute;
+      display: none;
+      max-height: 400px;
+      overflow: auto;
+      & > * {
+        white-space: nowrap;
+        cursor: pointer;
+        max-width: 400px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+    .nav-link {
+      cursor: pointer;
+    }
+
+    .nav-item {
+      &:hover {
+        .nav-link {
+          color: rgb(6, 85, 175);
+        }
+        .list-group {
+          display: block;
+        }
+      }
+    }
+  }
+}

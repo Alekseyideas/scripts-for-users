@@ -1,0 +1,58 @@
+html {
+  font-size: $startSize;
+}
+
+body {
+  background: #f9f9f9;
+  font: $font;
+}
+
+.sec-name {
+  // background: rgb(255, 255, 255);
+  h1 {
+    font-size: 25px;
+  }
+}
+
+.section-body {
+}
+
+$contHeight: 73vh;
+
+#content {
+  height: $contHeight;
+  overflow: auto;
+  background: white;
+  width: 100%;
+}
+
+.aside {
+  position: relative;
+  min-height: 200px;
+  max-height: $contHeight;
+  overflow: auto;
+  width: 100%;
+  background: white;
+  padding: 0;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      margin: 0 0;
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid rgb(224, 224, 224);
+        color: #000;
+
+        &:hover {
+          background: rgb(245, 245, 245);
+        }
+      }
+    }
+  }
+}

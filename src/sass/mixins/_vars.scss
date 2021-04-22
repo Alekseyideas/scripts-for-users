@@ -1,0 +1,38 @@
+$startSize: 14px;
+
+// Font size
+$fontSize: 1rem;
+
+// Padding
+$padding: 15px;
+
+// Colors
+//--------------------
+$colors: (
+  accent: #ff5500,
+  primary: #000,
+  blue: #2b73d5,
+);
+
+@function color($colorSelect) {
+  @return map_get($colors, $colorSelect);
+}
+
+// Transition
+//--------------------
+$transition: 0.2s;
+
+// Corner radius
+//--------------------
+$radius: 4px;
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+$font: $fontSize 'Open Sans', sans-serif;
+
+$defPad: 20px 0;
+
+$maxWidthContent: 1200px;
