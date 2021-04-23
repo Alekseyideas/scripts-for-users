@@ -4,10 +4,11 @@ const PRODUCT_TYPE_ID = 'productType';
 const URI_JSON = './json/data.json';
 const URI_SINGLE_JSON = './json/single.json';
 const MENU_ID = 'navMenu';
+const LIST_CLASS = 'list-group';
 
 async function domLoaded() {
   // const data = await getJson('./test.json');
-  console.log(window);
+
   const data = await getJson(URI_JSON);
   if (!data) return console.log('Json data does not exist', data);
   if (!data.scriptType) return console.warn('scriptType does not exist');
@@ -23,6 +24,19 @@ async function domLoaded() {
   NavMenu.newCats = data.category;
   NavMenu.newItems = data.items;
   NavMenu.renderCats();
+  const menuItems = NavMenu.menu.querySelectorAll('.nav-item');
+
+  menuItems &&
+    menuItems[0] &&
+    menuItems.forEach((itm) => {
+      itm.addEventListener('mouseenter', function () {
+        const list = this.querySelector('.' + LIST_CLASS);
+        if (!list) return null;
+        setTimeout(() => {
+          list.scrollTo(0, 0);
+        }, 100);
+      });
+    });
 
   const ScriptType = new Select(SCR_TYPE_ID);
   ScriptType.newOptions = data.scriptType;
@@ -201,7 +215,7 @@ class Menu {
       if (!items) return null;
       if (!items[0]) return null;
       const list = document.createElement('div');
-      list.className = 'list-group';
+      list.className = LIST_CLASS;
 
       items.forEach((element) => {
         if (!element.id) return console.error('Element does not have field id', element);
@@ -234,6 +248,7 @@ class HtmlBody {
   renderHeader(title, date) {
     if (!title) return console.error('Title is required');
     if (!date) return console.error('Update date is required');
+    this.headerWrapper.closest('section').style.background = '#73a7cc';
     this.headerWrapper.innerHTML = `
       <div class="row align-items-center">
         <div class="col">

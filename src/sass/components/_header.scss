@@ -1,7 +1,7 @@
 .header {
   .main-selects {
     .form-select {
-      max-width: 200px;
+      // max-width: 200px;
     }
   }
 
@@ -37,7 +37,7 @@
       overflow: auto;
       left: 0;
       top: 100%;
-      border-radius: 8px;
+      border-radius: 5px;
       border: 1px solid rgb(209, 209, 209);
       & > * {
         white-space: nowrap;
@@ -65,8 +65,8 @@
       text-decoration: none;
       color: rgb(16, 16, 16);
       border: 1px solid rgb(209, 209, 209);
-      padding: 5px 20px;
-      border-radius: 20px;
+      padding: 0px 10px;
+      border-radius: 5px;
       &:hover {
         background: rgb(242, 242, 242);
         border-color: rgb(209, 209, 209);
