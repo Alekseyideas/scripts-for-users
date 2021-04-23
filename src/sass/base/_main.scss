@@ -98,7 +98,7 @@ $contHeight: 73vh;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #2196f3;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -137,17 +137,24 @@ $contHeight: 73vh;
 }
 
 .langText {
-  position: absolute;
-  left: 100%;
-  margin-left: 10px;
   &:after {
+    position: absolute;
+    left: 100%;
+    margin-left: 10px;
     color: white;
     content: 'Рус';
   }
-}
-
-.switch input:checked ~ .langText {
-  &:after {
-    content: 'Eng';
+  &:before {
+    color: white;
+    position: absolute;
+    right: 100%;
+    margin-right: 10px;
+    content: 'Укр';
   }
 }
+
+// .switch input:checked ~ .langText {
+//   &:after {
+//     content: 'Eng';
+//   }
+// }

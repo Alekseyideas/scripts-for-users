@@ -40,11 +40,12 @@
       border-radius: 5px;
       border: 1px solid rgb(209, 209, 209);
       & > * {
-        white-space: nowrap;
+        // white-space: nowrap;
+        min-width: 450px;
         cursor: pointer;
-        max-width: 400px;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        max-width: 800px;
+        // overflow: hidden;
+        // text-overflow: ellipsis;
         border-color: transparent;
         border-top: 1px solid transparent;
 
