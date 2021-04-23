@@ -21,6 +21,7 @@ async function domLoaded() {
 
   const NavMenu = new Menu(MENU_ID);
   NavMenu.newCats = data.category;
+  NavMenu.newItems = data.items;
   NavMenu.renderCats();
 
   const ScriptType = new Select(SCR_TYPE_ID);

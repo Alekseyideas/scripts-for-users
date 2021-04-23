@@ -8,6 +8,7 @@
   &--1 {
     padding: 20px 0;
     border-bottom: 1px solid rgb(196, 196, 196);
+    background: #0464a8;
   }
 
   &--2 {
@@ -25,7 +26,8 @@
     flex-direction: row;
 
     & > * {
-      margin-right: 40px;
+      margin-right: 10px;
+      position: relative;
     }
 
     .list-group {
@@ -33,12 +35,25 @@
       display: none;
       max-height: 400px;
       overflow: auto;
+      left: 0;
+      top: 100%;
+      border-radius: 8px;
+      border: 1px solid rgb(209, 209, 209);
       & > * {
         white-space: nowrap;
         cursor: pointer;
         max-width: 400px;
         overflow: hidden;
         text-overflow: ellipsis;
+        border-color: transparent;
+        border-top: 1px solid transparent;
+
+        &:hover {
+          border-bottom: 1px solid rgb(209, 209, 209);
+          border-top: 1px solid rgb(209, 209, 209);
+        }
+
+        // border-bottom: 0;
       }
     }
 
@@ -47,7 +62,14 @@
     }
 
     .nav-item {
+      text-decoration: none;
+      color: rgb(16, 16, 16);
+      border: 1px solid rgb(209, 209, 209);
+      padding: 5px 20px;
+      border-radius: 20px;
       &:hover {
+        background: rgb(242, 242, 242);
+        border-color: rgb(209, 209, 209);
         .nav-link {
           color: rgb(6, 85, 175);
         }
