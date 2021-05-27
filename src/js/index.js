@@ -286,5 +286,19 @@ class HtmlBody {
         </div>
       `;
     });
+
+    const links = this.aside.querySelectorAll('a');
+
+    if (!links) return null;
+
+    let activeLink = 999999;
+
+    links.forEach((link, i) =>
+      link.addEventListener('click', () => {
+        if (links[activeLink]) links[activeLink].classList.remove('active');
+        link.classList.add('active');
+        activeLink = i;
+      })
+    );
   }
 }

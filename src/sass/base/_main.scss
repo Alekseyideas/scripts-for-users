@@ -72,6 +72,10 @@ $contHeight: 73vh;
         &:hover {
           background: rgb(245, 245, 245);
         }
+
+        &.active {
+          color: #0464a8;
+        }
       }
     }
   }
